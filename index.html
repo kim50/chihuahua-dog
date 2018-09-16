@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>치와와독</title>
+	<style>
+		#dog{width: 500px; position: absolute; left: 450px; top: 100px;}
+		h1{text-align: center;}
+	</style>
+</head>
+<body>
+	<img src="dog1.png" id="dog">
+	<audio id="soundMusic">
+	  <source src="sound.mp3" type="audio/mpeg">
+	</audio>
+
+	<script type="text/javascript">
+
+		var toggle = "off";
+
+		dog.onclick = function(){
+			if(toggle == "off"){
+				dog.setAttribute("src","dog2.png");
+				dog.style.width= "500px";
+				document.body.style.backgroundColor = "red";
+				toggle = "on";
+				soundMusic.play()	
+			}else {
+				dog.setAttribute("src","dog1.png");
+				dog.style.width= "500px";
+				document.body.style.backgroundColor = "white";
+				toggle = "off";
+				soundMusic.pause()	
+			}	
+		}
+
+		
+
+
+
+
+	</script>
+
+</body>
+</html>
